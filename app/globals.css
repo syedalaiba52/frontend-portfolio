@@ -9,3 +9,7 @@
   --color-text: #f0f2f5;
 }
 
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

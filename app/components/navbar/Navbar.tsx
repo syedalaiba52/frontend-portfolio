@@ -75,8 +75,10 @@ function Navbar() {
             icon={LuDownload}
             rounded
             text="Download CV"
-            href="/public/documents/Frontend Resume.pdf"
-            download={true}
+            href="/documents/Frontend Resume.pdf"
+            target = "blank"
+            rel="noopener noreferrer"
+            
           />
         </div>
       </div>

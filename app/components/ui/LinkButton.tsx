@@ -8,6 +8,8 @@ interface LinkButtonProps {
   iconPosition?: "left" | "right";
   rounded?: boolean;
   download?: boolean;
+  target?: string;
+  rel?: string;
 
   variant?: "primary" | "outline";
 }
@@ -18,7 +20,8 @@ const LinkButton = ({
   icon: Icon,
   iconPosition = "right",
   rounded,
-  download = false,
+   target,
+  rel,
   variant = "primary",
 }: LinkButtonProps) => {
   const baseStyles = `
@@ -29,7 +32,8 @@ const LinkButton = ({
     outline: `bg-transparent text-text border-border hover:text-primary hover:border-primary hover:bg-primary/10 `,
   };
   return (
-    <Link download={download} className={`${baseStyles} ${variants[variant]}`} href={href}>
+    <Link className={`${baseStyles} ${variants[variant]}`} href={href} target={target}
+      rel={rel}>
       {Icon && iconPosition === "left" && <Icon className="w-5 h-5 z-10" />}
       <span className="z-10">{text}</span>
       {Icon && iconPosition === "right" && <Icon className="w-5 h-5 z-10" />}

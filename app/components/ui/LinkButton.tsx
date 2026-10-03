@@ -25,7 +25,7 @@ const LinkButton = ({
   variant = "primary",
 }: LinkButtonProps) => {
   const baseStyles = `
-  relative px-6 py-3 font-medium ${rounded ? "rounded-full" : "rounded-lg"} inline-flex items-center justify-center  gap-2 overflow-hidden text-text border transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] `;
+  relative px-6 py-3 font-medium ${rounded ? "rounded-full" : "rounded-lg"} inline-flex items-center justify-center  gap-2 overflow-hidden text-text border transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]`;
 
   const variants = {
     primary: `bg-primary text-background border-transparent hover:bg-primary/80`,

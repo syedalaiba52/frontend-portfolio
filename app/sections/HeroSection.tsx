@@ -1,6 +1,7 @@
-import { LuArrowRight, LuView } from "react-icons/lu";
+import { LuArrowRight } from "react-icons/lu";
 import DotGrid from "../components/hero/background";
 import LinkButton from "../components/ui/LinkButton";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -51,6 +52,7 @@ const HeroSection = () => {
               href="#contact"
               rounded
               icon={LuArrowRight}
+              
             />
 
             <LinkButton
@@ -62,7 +64,15 @@ const HeroSection = () => {
           </div>
         </div>
 
-        
+        {/* right-side */}
+        <div className="flex justify-center lg:justify-end">
+            <div className="relative w-85 h-85 md:w-110 md:h-110 rounded-full bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
+            {/* image glow */}
+            <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl" />
+            <Image fill src="/images/profile.png" alt="profile image" className="z-10 object-cover rounded-full"/>
+
+            </div>
+        </div>
       </div>
     </section>
   );

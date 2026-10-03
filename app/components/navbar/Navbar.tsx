@@ -5,8 +5,9 @@ import Logo from "./Logo";
 import Link from "next/link";
 import LinkButton from "../ui/LinkButton";
 import { LuDownload, LuMenu, LuX } from "react-icons/lu";
+import MobileNav from "./MobileNav";
 
-const navLinks = [
+export const navLinks = [
   {
     href: "#home",
     label: "Home",
@@ -47,8 +48,9 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
+    <>
     <nav
-      className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 ${scrolled ? "backdrop-blur-xl" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full z-60 transition-all duration-300 ${scrolled ? "backdrop-blur-xl" : "bg-transparent"}`}
     >
       <div className="w-[95%] lg:w-[90%] mx-auto h-16 flex items-center justify-between">
         {/* logo */}
@@ -87,6 +89,9 @@ function Navbar() {
         </button>
       </div>
     </nav>
+
+    <MobileNav navOpen = {navOpen}/>
+    </>
   );
 }
 

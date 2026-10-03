@@ -1,4 +1,6 @@
+import { LuArrowRight, LuView } from "react-icons/lu";
 import DotGrid from "../components/hero/background";
+import LinkButton from "../components/ui/LinkButton";
 
 const HeroSection = () => {
   return (
@@ -24,7 +26,44 @@ const HeroSection = () => {
         />
       </div>
 
-      
+      {/* content */}
+      <div className="relative w-[90%] z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        {/* left-side */}
+        <div className="space-y-6">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm border border-border">
+            Frontend Developer • React.js & Next.js
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text/90">
+            Building modern web experiences with{" "}
+            <span className="text-primary/70">clean code</span>
+          </h1>
+
+          <p className="text-gray-400 max-w-lg tracking-wide">
+            I design and build responsive web interfaces using modern
+            technologies like React.js, Next.js, TypeScript, and Tailwind CSS.
+            Focused on clean UI, responsive design, and user-friendly web
+            experiences.
+          </p>
+
+          <div className="flex items-center gap-4 pt-2">
+            <LinkButton
+              text="Get in touch"
+              href="#contact"
+              rounded
+              icon={LuArrowRight}
+            />
+
+            <LinkButton
+              text="View Projects"
+              href="#projects"
+              rounded
+              variant="outline"
+            />
+          </div>
+        </div>
+
+        
+      </div>
     </section>
   );
 };

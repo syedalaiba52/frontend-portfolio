@@ -52,7 +52,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-60 transition-all duration-300 ${scrolled ? "backdrop-blur-xl" : "bg-transparent"}`}
     >
-      <div className="w-[95%] lg:w-[90%] mx-auto h-16 flex items-center justify-between">
+      <div className="w-[95%] lg:w-[93%] mx-auto h-16 flex items-center justify-between">
         {/* logo */}
         <Logo />
 

@@ -1,11 +1,5 @@
 import Image from "next/image";
-import {
-  LuBookOpen,
-  LuCode,
-  LuDatabase,
-  LuLayoutTemplate,
-  LuRocket,
-} from "react-icons/lu";
+import { LuBookOpen, LuCode, LuLayoutTemplate } from "react-icons/lu";
 
 const AboutSection = () => {
   return (

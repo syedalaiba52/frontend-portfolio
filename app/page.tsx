@@ -1,6 +1,8 @@
+import HeroSection from "./sections/HeroSection";
+
 const page = () => {
   return (
-  <h1></h1>
+  <HeroSection/>
   );
 };
 

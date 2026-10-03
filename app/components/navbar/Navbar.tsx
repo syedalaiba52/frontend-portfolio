@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import LinkButton from "../ui/LinkButton";
-import { LuDownload } from "react-icons/lu";
+import { LuDownload, LuMenu, LuX } from "react-icons/lu";
 
 const navLinks = [
   {
@@ -35,6 +35,7 @@ const navLinks = [
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,11 +77,14 @@ function Navbar() {
             rounded
             text="Download CV"
             href="/documents/Frontend Resume.pdf"
-            target = "blank"
+            target="blank"
             rel="noopener noreferrer"
-            
           />
         </div>
+
+        <button onClick={() => setNavOpen(!navOpen)} className="z-50 lg:hidden w-10 h-10 rounded-lg flex items-center justify-center border border-border bg-surface/60 text-text hover:border-primary hover:text-primary transition-all duration-300">
+        {navOpen ? <LuX size={22}/> : <LuMenu size={22}/>}
+        </button>
       </div>
     </nav>
   );

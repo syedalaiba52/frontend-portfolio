@@ -32,7 +32,7 @@ This portfolio is designed to showcase my skills, learning journey, and future p
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/syedalaiba52/portfolio-website.git
 ```
 
 Navigate to the project:
@@ -58,8 +58,6 @@ Open `http://localhost:3000` in your browser.
 ## 🌍 Live Website
 
 The portfolio is deployed and available online.
-
-**Live Demo:** Add your deployed website link here.
 
 ## 📌 Project Status
 

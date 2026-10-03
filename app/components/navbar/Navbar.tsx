@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+import LinkButton from "../ui/LinkButton";
+import { LuDownload } from "react-icons/lu";
 
 const navLinks = [
   {
@@ -56,13 +58,27 @@ function Navbar() {
           {navLinks.map((link, index) => {
             return (
               <li key={index}>
-                <Link href={link.href} className="px-4 py-2 rounded-full font-medium text-sm text-gray-300 transition-all duration-300 hover:text-primary hover:bg-surface">
+                <Link
+                  href={link.href}
+                  className="px-4 py-2 rounded-full font-medium text-sm text-gray-300 transition-all duration-300 hover:text-primary hover:bg-surface"
+                >
                   {link.label}
                 </Link>
               </li>
             );
           })}
         </ul>
+
+        <div className="hidden lg:block">
+          <LinkButton
+            iconPosition="left"
+            icon={LuDownload}
+            rounded
+            text="Download CV"
+            href="/public/documents/Frontend Resume.pdf"
+            download={true}
+          />
+        </div>
       </div>
     </nav>
   );

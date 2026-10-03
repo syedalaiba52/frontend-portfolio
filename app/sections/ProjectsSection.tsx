@@ -1,3 +1,4 @@
+import ProjectCard from "../components/project/ProjectCard";
 import SectionHeader from "../components/ui/SectionHeader";
 
 const projects = [
@@ -5,7 +6,7 @@ const projects = [
     title: "Nexora Modern Web Interface",
     description:
       "A modern and responsive website built to practice frontend development, with a clean layout, user-friendly interface, and responsive design across different screen sizes.",
-    image: "/public/images/nexora.png",
+    image: "/images/nexora.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveURL: "https://nexora-nextjs.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/nexora",
@@ -14,7 +15,7 @@ const projects = [
     title: "RedHanded Responsive Website",
     description:
       "A responsive website built with Bootstrap, focusing on a clean layout, structured sections, and a user-friendly design.",
-    image: "/public/images/redhanded.png",
+    image: "/images/redhanded.png",
     tags: ["HTML", "Bootstrap"],
     liveURL: "https://redhanded-bootstrap-website.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/redhanded",
@@ -23,7 +24,7 @@ const projects = [
     title: "Personal Web Page",
     description:
       "Built with HTML and CSS as a practice project, exploring page structure, styling, layouts, and basic web design.",
-    image: "/public/images/my-website.png",
+    image: "/images/my-website.png",
     tags: ["HTML", "CSS"],
     liveURL: "https://complete-html-css-responsive-projec.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/practice-website",
@@ -32,7 +33,7 @@ const projects = [
     title: "Amazon E-commerce Page",
     description:
       "Recreated an Amazon-style shopping page using HTML and CSS, focusing on layout, navigation, product sections, and visual styling.",
-    image: "/public/images/amazon.png",
+    image: "/images/amazon.png",
     tags: ["HTML", "CSS"],
     liveURL: "https://amazon-page-eight.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/amazon-page",
@@ -41,7 +42,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description:
       "Developed with HTML, CSS, and JavaScript to showcase skills, projects, and basic interactive features through a clean personal website.",
-    image: "/public/images/portfolio.png",
+    image: "/public/image",
     tags: ["HTML", "CSS", "JavaScript"],
     liveURL: "https://personal-portfolio-three-silk-21.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/personal-portfolio",
@@ -54,20 +55,23 @@ const ProjectsSection = () => {
       {/* background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
 
-      <SectionHeader title="Some of my Recent" highlight="Work" badge="Projects" description="A selection of projects showcasing my frontend skills, creativity, and growing experience in web development."/>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 ga-8 lg:gap-10">
-        {
-            projects.map((project, index) => {
-                return (
-                        // <p>{project.title}</p>
-                        <ProjectCard/>
-                )
-            })
-        }
+      <div className="w-[90%] max-w-6xl mx-auto space-y-12">
+        <SectionHeader
+          title="Some of my Recent"
+          highlight="Work"
+          badge="Projects"
+          description="A selection of projects showcasing my frontend skills, creativity, and growing experience in web development."
+        />
       </div>
 
-
+      <div className="grid grid-cols-1 md:grid-cols-2 ga-8 lg:gap-10">
+        {projects.map((project, index) => {
+          return (
+            // <p>{project.title}</p>
+            <ProjectCard {...project} key={index} />
+          );
+        })}
+      </div>
     </section>
   );
 };

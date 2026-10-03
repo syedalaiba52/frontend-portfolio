@@ -1,9 +1,7 @@
 
 const HeroSection = () => {
   return (
-    <div>
-      Hero Section
-    </div>
+    <section id=""></section>
   )
 }
 

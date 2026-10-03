@@ -1,7 +1,7 @@
 import { LuArrowRight } from "react-icons/lu";
-import DotGrid from "../components/hero/background";
 import LinkButton from "../components/ui/LinkButton";
 import Image from "next/image";
+import DotGrid from "../components/hero/background";
 
 const HeroSection = () => {
   return (
@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
 
       {/* background */}
-      <div className="inset-0 absolute">
+      <div className="inset-0 absolute pointer-events-none">
         <DotGrid
           dotSize={2}
           gap={15}

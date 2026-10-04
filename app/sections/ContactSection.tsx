@@ -1,5 +1,9 @@
+"use client";
+
 import { LuMail, LuMapPin, LuPhone, LuSend } from "react-icons/lu";
 import SectionHeader from "../components/ui/SectionHeader";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const contactInfo = [
   {
@@ -23,6 +27,29 @@ const contactInfo = [
 ];
 
 const ContactSection = () => {
+  const [loading, setLoading] = useState(false);
+  const onSubmit = async (event: React.SubmitEvent) => {
+    event.preventDefault();
+    setLoading(true);
+    const formData = new FormData(event.target);
+    formData.append("access_key", "1731cb58-19f0-4922-bd4d-03b1ea434e4e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    // setResult(data.success ? "Success!" : "Error");
+    if (data.success) {
+      toast.success("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      toast.error("Error Submitting form");
+    }
+
+    setLoading(false);
+  };
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* background glow */}
@@ -38,7 +65,10 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* left form */}
-          <form className="p-6 rounded-2xl border border-border bg-surface space-y-5">
+          <form
+            onSubmit={onSubmit}
+            className="p-6 rounded-2xl border border-border bg-surface space-y-5"
+          >
             <h3 className="text-lg font-semibold text-text">Send a message</h3>
 
             {/* name */}
@@ -46,6 +76,7 @@ const ContactSection = () => {
               <label className="text-sm text-gray-400 block mb-1">Name</label>
 
               <input
+                name="name"
                 type="text"
                 placeholder="Your name"
                 required
@@ -60,6 +91,7 @@ const ContactSection = () => {
               </label>
 
               <input
+                name="email"
                 type="email"
                 placeholder="you@example.com"
                 required
@@ -74,6 +106,7 @@ const ContactSection = () => {
               </label>
 
               <textarea
+                name="message"
                 required
                 rows={4}
                 placeholder="Your message..."
@@ -83,11 +116,21 @@ const ContactSection = () => {
 
             {/* button */}
             <button
+              disabled={loading}
               type="submit"
               className="w-full py-3 rounded-full bg-primary text-gray-200 font-medium hover:opacity-90 transition flex items-center justify-center cursor-pointer gap-2"
             >
-              Send Message
-              <LuSend className="w-4 h-4" />
+              {loading ? (
+                <>
+                  <span className="w-6 h-6 border-3 border-white/30 border-t-white rounded-full  animate-spin"></span>
+                  Sending Message...
+                </>
+              ) : (
+                <>
+                  <LuSend className="w-4 h-4" />
+                  Send Message
+                </>
+              )}
             </button>
           </form>
 

@@ -5,6 +5,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import HighlightsSection from "./sections/HighlightsSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./sections/Footer";
+import { Toaster } from "react-hot-toast";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <HighlightsSection />
       <ContactSection />
       <Footer/>
+      <Toaster/>
     </>
   );
 };

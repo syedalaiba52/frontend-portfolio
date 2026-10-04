@@ -86,7 +86,7 @@ const LearningJourney = () => {
                           return (
                             <span
                               key={techIndex}
-                              className="px-3 py-1 bg-surface rounded-full text-xs text-gray-300"
+                              className="px-3 py-1 bg-surface rounded-full text-xs text-gray-300 border border-border hover:border-primary transition duration-300"
                             >
                               {tech}
                             </span>

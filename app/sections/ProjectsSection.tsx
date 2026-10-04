@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Nexora Modern Web Interface",
     description:
-      "A modern and responsive website built to practice frontend development, with a clean layout, user-friendly interface, and responsive design across different screen sizes.",
+      "A modern and responsive website with a clean layout, user-friendly interface, and smooth design across different screen sizes.",
     image: "/images/nexora.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveURL: "https://nexora-nextjs.vercel.app/",
@@ -67,8 +67,10 @@ const ProjectsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
         {projects.map((project, index) => {
           return (
-            // <p>{project.title}</p>
-            <ProjectCard {...project} key={index} />
+            <div data-aos="fade-right" data-aos-delay={index * 100}
+          data-aos-anchor-placement="top-center" key={index}>
+              <ProjectCard {...project}/>
+            </div>
           );
         })}
       </div>

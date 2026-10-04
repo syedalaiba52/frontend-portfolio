@@ -30,7 +30,12 @@ const AboutSection = () => {
         </div>
 
         {/* right side */}
-        <div data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-center" className="space-y-6">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
+          className="space-y-6"
+        >
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm border border-border">
             About Me
           </span>

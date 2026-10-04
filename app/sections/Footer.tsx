@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     icon: LuLinkedin,
-    href: "https://www.linkedin.com/in/syedalaiba52/?isSelfProfile=true",
+    href: "www.linkedin.com/in/syeda-laiba-shah-ab059742b",
     label: "LinkedIn",
   },
 ];

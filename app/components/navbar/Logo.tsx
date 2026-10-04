@@ -10,7 +10,7 @@ const Logo = () => {
       </div>
 
       <p className="hidden sm:block font-semibold text-lg md:text-xl tracking-wide text-gray-300 group-hover:text-primary transition-colors duration-300">
-        Portfolio
+        Syeda Laiba
       </p>
     </Link>
   );

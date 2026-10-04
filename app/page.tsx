@@ -4,6 +4,7 @@ import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import HighlightsSection from "./sections/HighlightsSection";
 import ContactSection from "./sections/ContactSection";
+import Footer from "./sections/Footer";
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       <ExperienceSection />
       <HighlightsSection />
       <ContactSection />
+      <Footer/>
     </>
   );
 };

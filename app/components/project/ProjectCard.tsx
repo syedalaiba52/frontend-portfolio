@@ -8,7 +8,7 @@ interface ProjectCardProps {
   liveURL?: string;
   githubURL?: string;
   image: string;
-  tags: string;
+  tags: string[];
 }
 
 const ProjectCard = ({
@@ -69,7 +69,7 @@ const ProjectCard = ({
 
           {githubURL && (
             <Link
-              href={liveURL}
+              href={githubURL}
               target="_blank"
               className="flex items-center gap-1 text-sm text-text-muted hover:text-primary transition"
             >

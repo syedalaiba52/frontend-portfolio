@@ -9,7 +9,7 @@ const projects = [
     image: "/images/nexora.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveURL: "https://nexora-nextjs.vercel.app/",
-    githubURL: "https://github.com/syedalaiba52/nexora",
+    githubURL: "https://github.com/syedalaiba52/nexora.git",
   },
   {
     title: "RedHanded Responsive Website",
@@ -42,7 +42,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description:
       "Developed with HTML, CSS, and JavaScript to showcase skills, projects, and basic interactive features through a clean personal website.",
-    image: "/public/image",
+    image: "/images/portfolio.png",
     tags: ["HTML", "CSS", "JavaScript"],
     liveURL: "https://personal-portfolio-three-silk-21.vercel.app/",
     githubURL: "https://github.com/syedalaiba52/personal-portfolio",
@@ -62,15 +62,16 @@ const ProjectsSection = () => {
           badge="Projects"
           description="A selection of projects showcasing my frontend skills, creativity, and growing experience in web development."
         />
-      </div>
+      
 
-      <div className="grid grid-cols-1 md:grid-cols-2 ga-8 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
         {projects.map((project, index) => {
           return (
             // <p>{project.title}</p>
             <ProjectCard {...project} key={index} />
           );
         })}
+      </div>
       </div>
     </section>
   );

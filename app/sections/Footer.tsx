@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     icon: LuLinkedin,
-    href: "https://www.linkedin.com/in/syedalaiba52",
+    href: "https://www.linkedin.com/in/syedalaiba52/?isSelfProfile=true",
     label: "LinkedIn",
   },
 ];

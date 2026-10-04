@@ -56,15 +56,15 @@ const AboutSection = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3  gap-4 pt-4">
-            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary transition duration-500 ">
+            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary/50 transition duration-500 ">
               <LuCode className="mx-auto mb-2 text-primary w-6 h-6" />
               <p className="text-text text-sm">Clean & Simple Code</p>
             </div>
-            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary transition duration-500">
+            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary/50 transition duration-500">
               <LuLayoutTemplate className="mx-auto mb-2 text-primary w-6 h-6" />
               <p className="text-text text-sm">Responsive Web Design</p>
             </div>
-            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary transition duration-500">
+            <div className="p-4 rounded-xl bg-surface border border-border text-center hover:border-primary/50 transition duration-500">
               <LuBookOpen className="mx-auto mb-2 text-primary w-6 h-6" />
               <p className="text-text text-sm">Continuous Learning</p>
             </div>

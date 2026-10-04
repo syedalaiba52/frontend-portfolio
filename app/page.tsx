@@ -6,18 +6,21 @@ import HighlightsSection from "./sections/HighlightsSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./sections/Footer";
 import { Toaster } from "react-hot-toast";
+import AnimationLayout from "./components/layouts/AnimationLayout";
 
 const page = () => {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <HighlightsSection />
-      <ContactSection />
-      <Footer/>
-      <Toaster/>
+      <AnimationLayout>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <HighlightsSection />
+        <ContactSection />
+        <Footer />
+        <Toaster />
+      </AnimationLayout>
     </>
   );
 };

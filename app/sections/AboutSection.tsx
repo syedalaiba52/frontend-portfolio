@@ -9,7 +9,12 @@ const AboutSection = () => {
 
       <div className="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* left side */}
-        <div className="flex justify-center lg:justify-start">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
+          className="flex justify-center lg:justify-start"
+        >
           <div className="relative w-85 h-85 md:w-120 md:h-120 rounded-2xl bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
             <div className="absolute inset-0 rounded-2xl bg-primary/10 blur-2xl" />
 
@@ -25,7 +30,7 @@ const AboutSection = () => {
         </div>
 
         {/* right side */}
-        <div className="space-y-6">
+        <div data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-center" className="space-y-6">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm border border-border">
             About Me
           </span>

@@ -1,4 +1,4 @@
-import { LuArrowRight, LuBriefcaseBusiness, LuExternalLink, LuFolderOpen, LuLayoutGrid } from "react-icons/lu";
+import { LuArrowRight, LuLayoutGrid } from "react-icons/lu";
 import DotGrid from "../components/hero/background";
 import LinkButton from "../components/ui/LinkButton";
 import Image from "next/image";
@@ -31,28 +31,30 @@ const HeroSection = () => {
       <div className="relative w-[90%] z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* left-side */}
         <div className="space-y-6">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm border border-border">
+          <span
+            data-aos="fade-up"
+            className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm border border-border"
+          >
             Frontend Developer • React.js & Next.js
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text/90">
+          <h1 data-aos="fade-up" data-aos-delay="200" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text/90">
             Building modern web experiences with{" "}
             <span className="text-primary/70">clean code</span>
           </h1>
 
-          <p className="text-gray-400 max-w-lg tracking-wide">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-400 max-w-lg tracking-wide">
             I design and build responsive web interfaces using modern
             technologies like React.js, Next.js, TypeScript, and Tailwind CSS.
             Focused on clean UI, responsive design, and user-friendly web
             experiences.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+          <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col sm:flex-row items-center gap-4 pt-2">
             <LinkButton
               text="Get in touch"
               href="#contact"
               rounded
               icon={LuArrowRight}
-              
             />
 
             <LinkButton
@@ -66,13 +68,17 @@ const HeroSection = () => {
         </div>
 
         {/* right-side */}
-        <div className="flex justify-center lg:justify-end">
-            <div className="relative w-85 h-85 md:w-110 md:h-110 rounded-full bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
+        <div data-aos="fade-left" className="flex justify-center lg:justify-end">
+          <div className="relative w-85 h-85 md:w-110 md:h-110 rounded-full bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
             {/* image glow */}
             <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl" />
-            <Image fill src="/images/profile.png" alt="profile image" className="z-10 object-cover rounded-full"/>
-
-            </div>
+            <Image
+              fill
+              src="/images/profile.png"
+              alt="profile image"
+              className="z-10 object-cover rounded-full"
+            />
+          </div>
         </div>
       </div>
     </section>

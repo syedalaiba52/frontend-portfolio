@@ -38,7 +38,7 @@ const AboutSection = () => {
             <div className="w-[85%] h-[85%] relative">
               <Image
                 fill
-                src="/images/about.png"
+                src="/images/about-me.png"
                 alt="about me"
                 className="z-10 object-cover rounded-xl"
               />

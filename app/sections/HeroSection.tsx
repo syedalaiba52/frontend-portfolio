@@ -74,9 +74,9 @@ const HeroSection = () => {
             <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl" />
             <Image
               fill
-              src="/images/profile.png"
+              src="/images/my-profile.png"
               alt="profile image"
-              className="z-10 object-cover rounded-full"
+              className="z-10 object-cover object-top rounded-full"
             />
           </div>
         </div>

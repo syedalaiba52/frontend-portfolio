@@ -65,7 +65,9 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* left form */}
-          <form
+          <form data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
             onSubmit={onSubmit}
             className="p-6 rounded-2xl border border-border bg-surface space-y-5"
           >
@@ -135,7 +137,9 @@ const ContactSection = () => {
           </form>
 
           {/* right contact info */}
-          <div className="p-2">
+          <div data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center" className="p-2">
             <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
 
             <div className="space-y-4">

@@ -35,10 +35,13 @@ const highlights = [
 
 const HighlightsSection = () => {
   return (
-    <section id="highlights" className="py-24 bg-background relative overflow-hidden">
-        {/* background glow */}
+    <section
+      id="highlights"
+      className="py-24 bg-background relative overflow-hidden"
+    >
+      {/* background glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
-      
+
       <div className="w-[90%] max-w-6xl mx-auto space-y-16">
         <SectionHeader
           title="What I Bring to"
@@ -47,7 +50,12 @@ const HighlightsSection = () => {
           description="A quick look at the areas I focus on while building and improving my frontend projects."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
           {highlights.map((item, index) => {
             return (
               <div

@@ -1,5 +1,5 @@
 import AboutSection from "./sections/AboutSection";
-import ExperienceSection from "./sections/ExperienceSection";
+import ExperienceSection from "./sections/LearningJourney";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 

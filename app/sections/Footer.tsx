@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     icon: LuLinkedin,
-    href: "www.linkedin.com/in/syeda-laiba-shah-ab059742b",
+    href: "https://www.linkedin.com/in/syedalaiba52",
     label: "LinkedIn",
   },
 ];
@@ -22,7 +22,7 @@ const Footer = () => {
       {/* background glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
 
-       {/* background */}
+      {/* background */}
       {/* <div className="inset-0 absolute">
         <DotGrid
           dotSize={2}

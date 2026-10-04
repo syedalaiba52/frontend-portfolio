@@ -13,14 +13,14 @@ const highlights = [
   {
     name: "Personal Projects",
     role: "Learning Through Practice",
-    image: "/images/personal-projects.jpg",
+    image: "/images/personal-projects.png",
     feedback:
       "Building small projects helps put new concepts into practice and gain hands-on experience with different frontend technologies.",
   },
   {
     name: "Responsive Design",
     role: "Mobile & Desktop",
-    image: "/images/responsive-design.jpg",
+    image: "/images/responsive-design.png",
     feedback:
       "Layouts are designed with different screen sizes in mind, keeping interfaces clear and usable across devices.",
   },

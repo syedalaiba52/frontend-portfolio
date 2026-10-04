@@ -2,6 +2,7 @@ import AboutSection from "./sections/AboutSection";
 import ExperienceSection from "./sections/LearningJourney";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
+import HighlightsSection from "./sections/HighlightsSection";
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <AboutSection />
       <ProjectsSection/>
       <ExperienceSection/>
+      <HighlightsSection/>
     </>
   );
 };

@@ -4,6 +4,7 @@ import { LuMail, LuMapPin, LuPhone, LuSend } from "react-icons/lu";
 import SectionHeader from "../components/ui/SectionHeader";
 import { useState } from "react";
 import toast from "react-hot-toast";
+// import DotGrid from "../components/hero/background";
 
 const contactInfo = [
   {
@@ -54,6 +55,21 @@ const ContactSection = () => {
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* background glow */}
       <div className="absolute top-1/3 right-1/4 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
+
+       {/* background */}
+      {/* <div className="inset-0 absolute">
+        <DotGrid
+          dotSize={2}
+          gap={15}
+          baseColor="#2F293A"
+          activeColor="#20B2A6"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div> */}
 
       <div className="w-[90%] max-w-6xl mx-auto relative z-10 space-y-16">
         <SectionHeader

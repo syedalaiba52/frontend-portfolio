@@ -1,3 +1,4 @@
+// import DotGrid from "../components/hero/background";
 import ProjectCard from "../components/project/ProjectCard";
 import SectionHeader from "../components/ui/SectionHeader";
 
@@ -54,6 +55,21 @@ const ProjectsSection = () => {
     <section id="projects" className="py-24 relative">
       {/* background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
+
+       {/* background */}
+      {/* <div className="inset-0 absolute">
+        <DotGrid
+          dotSize={2}
+          gap={15}
+          baseColor="#2F293A"
+          activeColor="#20B2A6"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div> */}
 
       <div className="w-[90%] max-w-6xl mx-auto space-y-12 py-2">
         <SectionHeader

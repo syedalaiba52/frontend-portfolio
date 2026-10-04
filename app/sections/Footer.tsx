@@ -1,6 +1,7 @@
 import Logo from "../components/navbar/Logo";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import Link from "next/link";
+// import DotGrid from "../components/hero/background";
 
 const socialLinks = [
   {
@@ -20,6 +21,21 @@ const Footer = () => {
     <footer className="relative border-t border-border bg-background overflow-hidden">
       {/* background glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
+
+       {/* background */}
+      {/* <div className="inset-0 absolute">
+        <DotGrid
+          dotSize={2}
+          gap={15}
+          baseColor="#2F293A"
+          activeColor="#20B2A6"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div> */}
 
       <div className="w-[90%] max-w-6xl mx-auto py-14 space-y-10 relative z-10">
         {/* top section */}

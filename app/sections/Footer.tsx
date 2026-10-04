@@ -1,7 +1,19 @@
-import React from "react";
 import Logo from "../components/navbar/Logo";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import Link from "next/link";
+
+const socialLinks = [
+  {
+    icon: LuGithub,
+    href: "https://github.com/syedalaiba52",
+    label: "GitHub",
+  },
+  {
+    icon: LuLinkedin,
+    href: "https://www.linkedin.com/in/syedalaiba52",
+    label: "LinkedIn",
+  },
+];
 
 const Footer = () => {
   return (
@@ -25,11 +37,15 @@ const Footer = () => {
 
           {/* socials */}
           <div className="flex items-center gap-4">
-            {[LuGithub, LuLinkedin].map((Icon, index) => {
+            {socialLinks.map((item) => {
+              const Icon = item.icon;
               return (
                 <Link
-                  key={index}
-                  href="#"
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
                   className="w-10 h-10 rounded-full flex items-center justify-center border border-border text-gray-300 hover:text-primary hover:border-primary hover:shadow-[0_0_20px_rgba(32,178,166,0.2)] transition-all duration-300"
                 >
                   <Icon className="w-5 h-5" />

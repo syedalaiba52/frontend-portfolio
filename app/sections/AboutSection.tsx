@@ -8,7 +8,7 @@ const AboutSection = () => {
       {/* background glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
 
-       {/* background */}
+      {/* background */}
       {/* <div className="inset-0 absolute">
         <DotGrid
           dotSize={2}

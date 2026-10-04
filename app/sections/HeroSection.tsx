@@ -1,4 +1,4 @@
-import { LuArrowRight } from "react-icons/lu";
+import { LuArrowRight, LuBriefcaseBusiness, LuExternalLink, LuFolderOpen, LuLayoutGrid } from "react-icons/lu";
 import DotGrid from "../components/hero/background";
 import LinkButton from "../components/ui/LinkButton";
 import Image from "next/image";
@@ -46,7 +46,7 @@ const HeroSection = () => {
             experiences.
           </p>
 
-          <div className="flex items-center gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
             <LinkButton
               text="Get in touch"
               href="#contact"
@@ -60,6 +60,7 @@ const HeroSection = () => {
               href="#projects"
               rounded
               variant="outline"
+              icon={LuLayoutGrid}
             />
           </div>
         </div>

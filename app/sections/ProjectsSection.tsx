@@ -55,7 +55,7 @@ const ProjectsSection = () => {
       {/* background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
 
-      <div className="w-[90%] max-w-6xl mx-auto space-y-12">
+      <div className="w-[90%] max-w-6xl mx-auto space-y-12 py-2">
         <SectionHeader
           title="Some of my Recent"
           highlight="Work"

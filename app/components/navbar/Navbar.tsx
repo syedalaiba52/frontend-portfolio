@@ -21,8 +21,8 @@ export const navLinks = [
     label: "Projects",
   },
   {
-    href: "#experience",
-    label: "Experience",
+    href: "#journey",
+    label: "My Journey",
   },
   {
     href: "#testimonials",

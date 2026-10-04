@@ -6,6 +6,7 @@ const AboutSection = () => {
     <section id="about" className="py-24 overflow-hidden relative">
       {/* background glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full blur-3xl bg-primary/10" />
+
       <div className="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* left side */}
         <div className="flex justify-center lg:justify-start">

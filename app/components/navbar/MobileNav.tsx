@@ -38,7 +38,7 @@ const MobileNav = ({ navOpen }: MobileNavProps) => {
             icon={LuDownload}
             rounded
             text="Download CV"
-            href="/documents/Frontend Resume.pdf"
+            href="/documents/Frontend Novoresume.pdf"
             target="blank"
             rel="noopener noreferrer"
           />

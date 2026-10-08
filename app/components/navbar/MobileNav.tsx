@@ -39,7 +39,7 @@ const MobileNav = ({ navOpen }: MobileNavProps) => {
             icon={LuDownload}
             rounded
             text="Download CV"
-            href="/assets/Syeda-Laiba-CV.pdf"
+            href="/documents/Syeda-Laiba-CV.pdf"
             target="blank"
             rel="noopener noreferrer"
           />

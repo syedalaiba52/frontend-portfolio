@@ -78,7 +78,7 @@ function Navbar() {
               icon={LuDownload}
               rounded
               text="Download CV"
-              href=""
+              href="/assets/Syeda-Laiba-CV.pdf"
               target="blank"
               rel="noopener noreferrer"
             />

@@ -19,17 +19,18 @@ const MobileNav = ({ navOpen }: MobileNavProps) => {
         className={`fixed top-0 right-0 z-50 h-full w-[80%] sm:w-[60%] lg:hidden bg-surface/95 backdrop-blur-md border-l border-border flex flex-col items-center justify-center space-y-2 px-6 transition-all duration-500 ${navOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <ul>
-            {
-            navLinks.map((link, index) => {
-                return(
-                    <li key={index}>
-                        <Link href={link.href} className="block w-full text-center text-lg font-medium text-text border border-transparent transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:border-border py-2 px-4 outline-0">
-                        {link.label}
-                        </Link>
-                </li>
-                );
-            })
-            }
+          {navLinks.map((link, index) => {
+            return (
+              <li key={index}>
+                <Link
+                  href={link.href}
+                  className="block w-full text-center text-lg font-medium text-text border border-transparent transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:border-border py-2 px-4 outline-0"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <div>
@@ -38,7 +39,7 @@ const MobileNav = ({ navOpen }: MobileNavProps) => {
             icon={LuDownload}
             rounded
             text="Download CV"
-            href="/documents/Frontend Novoresume.pdf"
+            href="documents/Frontend Resume.pdf"
             target="blank"
             rel="noopener noreferrer"
           />
